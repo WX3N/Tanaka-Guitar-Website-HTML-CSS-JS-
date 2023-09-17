@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanaka Guitar</title>
+    <link rel="icon" href="../image/icon.png" type="icon">
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <section class="area">
+            <a href="/html/home.html" class="logo">Tanaka Guitar</a>
+            <div class="navbar">
+                <ul class="">
+                    <a href="/html/home.html">Home</a>     
+                    <a href="/html/gallery.html">Gallery</a>     
+                    <a href="/html/member.html">Member</a>             
+                    <a href="/html/about-us.html">About Us</a>                   
+                    <a href="/html/contact-us.html">Contact Us</a>                   
+                </ul>      
+            </div>  
+
+            <div class="category">
+                <input type="checkbox" name="" id="">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+    </header>
+
+    <form name="memberform" class="member" action="./home.html" onsubmit="return validate()">
+        <div class="area-member">
+            <h2>Join Our Membership</h2>
+            <div class="myform">
+                <div class="input">
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" type="text" name="fullname">
+                    <span id="errorName"></span>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="email">  
+                    <span id="errorEmail"></span>                  
+                </div>
+                <div class="input">
+                    <label for="gender">Gender</label>
+                    <div class="area-gender">
+                        <div class="male">
+                            <input type="radio" name="gender" id="male" value="male">  Male   
+                        </div>
+                        <div class="female">
+                            <input type="radio" name="gender" id="female" value="female">  Female      
+                        </div>
+                                     
+                    </div>
+                    <span id="errorGender"></span>    
+                </div>
+                <div class="input">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address"></textarea>
+                    <span id="errorAddress"></span>       
+                </div>
+                <div class="input2">
+                    <label for="daily">
+                        <input id="daily" type="checkbox" class="col"><span>Get Daily Latter</span> </label> 
+                </div>
+                <div class="input2">
+                    <input type="checkbox" id="agreement" name="agreement" class="col">
+                     <label for="agreement">    
+                        <span>I agree to the</span> 
+                        <span class="beda">Term & Conditions</span>
+                        <div class="err">
+                            <span id="errorAgree"></span>    
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="area-submit">
+                <button id="submit" type="submit">Join</button>     
+            </div>
+            <div class="area-login">
+                <h2>Already a member? <span>Log in</span></h2>
+            </div>
+        </div>
+    </form>
+
+    <div class="area-footer">
+        <div class="footer">
+            <h2>Follow Us</h2>
+            <div class="sosmed">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+
+            <div class="credit">
+                copyright &copy;  2021 by Tanaka Guitar - All Rights Reserved!
+            </div>
+
+        </div>    
+    </div>
+
+
+
+    <script src="../js/member.js"></script>
+</body>
+</html>
